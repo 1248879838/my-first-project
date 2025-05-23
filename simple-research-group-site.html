@@ -12,14 +12,8 @@
                 extend: {
                     colors: {
                         primary: '#165DFF',
-                        secondary: '#36CFC9',
                         neutral: {
                             100: '#F5F7FA',
-                            200: '#E4E7ED',
-                            300: '#DCDFE6',
-                            400: '#C0C4CC',
-                            500: '#909399',
-                            600: '#606266',
                             700: '#303133',
                             800: '#1E1E1E',
                         }
@@ -40,8 +34,7 @@
                 transition: all 0.3s ease;
             }
             .card-hover:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+                transform: translateY(-3px);
             }
         }
     </style>
@@ -59,12 +52,11 @@
                 </div>
                 
                 <!-- 桌面导航 -->
-                <div class="hidden md:flex space-x-8">
+                <div class="hidden md:flex space-x-6">
                     <a href="#home" class="text-neutral-700 hover:text-primary font-medium transition-colors">首页</a>
                     <a href="#research" class="text-neutral-700 hover:text-primary font-medium transition-colors">研究方向</a>
-                    <a href="#members" class="text-neutral-700 hover:text-primary font-medium transition-colors">研究团队</a>
+                    <a href="#members" class="text-neutral-700 hover:text-primary font-medium transition-colors">团队成员</a>
                     <a href="#publications" class="text-neutral-700 hover:text-primary font-medium transition-colors">学术成果</a>
-                    <a href="#facilities" class="text-neutral-700 hover:text-primary font-medium transition-colors">科研环境</a>
                     <a href="#contact" class="text-neutral-700 hover:text-primary font-medium transition-colors">联系我们</a>
                 </div>
                 
@@ -80,136 +72,104 @@
             <div class="container mx-auto px-4 py-3 space-y-3">
                 <a href="#home" class="block text-neutral-700 hover:text-primary font-medium transition-colors">首页</a>
                 <a href="#research" class="block text-neutral-700 hover:text-primary font-medium transition-colors">研究方向</a>
-                <a href="#members" class="block text-neutral-700 hover:text-primary font-medium transition-colors">研究团队</a>
+                <a href="#members" class="block text-neutral-700 hover:text-primary font-medium transition-colors">团队成员</a>
                 <a href="#publications" class="block text-neutral-700 hover:text-primary font-medium transition-colors">学术成果</a>
-                <a href="#facilities" class="block text-neutral-700 hover:text-primary font-medium transition-colors">科研环境</a>
                 <a href="#contact" class="block text-neutral-700 hover:text-primary font-medium transition-colors">联系我们</a>
             </div>
         </div>
     </nav>
 
     <!-- 首页/英雄区域 -->
-    <section id="home" class="bg-gradient-to-r from-primary to-secondary text-white py-20 md:py-32">
+    <section id="home" class="bg-primary text-white py-16 md:py-24">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold mb-6">环境感知与建模研究组</h1>
-            <p class="text-[clamp(1rem,2vw,1.25rem)] mb-10 max-w-3xl mx-auto">
-                致力于环境传感器网络、大气污染建模、水环境监测与生态环境遥感等领域的前沿研究
+            <h1 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">环境感知与建模研究组</h1>
+            <p class="text-[clamp(1rem,1.5vw,1.2rem)] mb-8 max-w-3xl mx-auto">
+                致力于环境监测、建模与数据分析的前沿研究
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="#research" class="px-6 py-3 bg-white text-primary font-medium rounded-lg hover:bg-neutral-100 transition-colors">
-                    了解研究方向
-                </a>
-                <a href="#contact" class="px-6 py-3 bg-transparent border-2 border-white text-white font-medium rounded-lg hover:bg-white/10 transition-colors">
-                    联系我们
-                </a>
-            </div>
+            <a href="#research" class="px-6 py-3 bg-white text-primary font-medium rounded-lg hover:bg-neutral-100 transition-colors inline-block">
+                了解研究方向
+            </a>
         </div>
     </section>
 
     <!-- 关于我们 -->
-    <section class="py-16 bg-white">
+    <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-neutral-800 mb-4">关于我们</h2>
-                <div class="w-20 h-1 bg-primary mx-auto"></div>
-            </div>
-            
             <div class="max-w-3xl mx-auto">
-                <p class="text-neutral-700 mb-6 text-center">
-                    环境感知与建模研究组成立于2010年，致力于环境传感器网络、大气污染建模、水环境监测与生态环境遥感等领域的前沿研究。
+                <h2 class="text-2xl font-bold text-neutral-800 mb-6 text-center">关于研究组</h2>
+                <p class="text-neutral-700 mb-6">
+                    环境感知与建模研究组成立于2010年，专注于环境传感器网络、大气与水环境建模、生态遥感等领域的研究。
                 </p>
-                <p class="text-neutral-700 mb-6 text-center">
-                    研究组现有教授2名，副教授3名，讲师2名，研究生30余名。近年来，在Environmental Science & Technology、Water Research等期刊发表论文100余篇，主持国家重点研发计划、国家自然科学基金等项目20余项。
+                <p class="text-neutral-700">
+                    研究组现有教授2名，副教授3名，研究生30余名。近年来在Environmental Science & Technology等期刊发表论文100余篇，主持国家重点研发计划等项目20余项。
                 </p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                <div class="bg-neutral-100 p-6 rounded-lg text-center">
-                    <div class="text-4xl font-bold text-primary mb-2">50+</div>
-                    <div class="text-neutral-600">研究项目</div>
-                </div>
-                <div class="bg-neutral-100 p-6 rounded-lg text-center">
-                    <div class="text-4xl font-bold text-primary mb-2">100+</div>
-                    <div class="text-neutral-600">学术论文</div>
-                </div>
-                <div class="bg-neutral-100 p-6 rounded-lg text-center">
-                    <div class="text-4xl font-bold text-primary mb-2">30+</div>
-                    <div class="text-neutral-600">研究生</div>
-                </div>
-                <div class="bg-neutral-100 p-6 rounded-lg text-center">
-                    <div class="text-4xl font-bold text-primary mb-2">10+</div>
-                    <div class="text-neutral-600">合作机构</div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- 研究方向 -->
-    <section id="research" class="py-16 bg-neutral-100">
+    <section id="research" class="py-12 bg-neutral-100">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-neutral-800 mb-4">研究方向</h2>
-                <div class="w-20 h-1 bg-primary mx-auto"></div>
-            </div>
+            <h2 class="text-2xl font-bold text-neutral-800 mb-8 text-center">研究方向</h2>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                        <i class="fa fa-cloud text-2xl"></i>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+                        <i class="fa fa-cloud text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-neutral-800 mb-3">大气环境监测与建模</h3>
+                    <h3 class="text-lg font-bold text-neutral-800 mb-2">大气环境监测</h3>
                     <p class="text-neutral-600">
-                        开发新型大气污染物监测技术，构建空气质量预测模型，研究大气污染传输与扩散规律。
+                        开发新型大气污染物监测技术，构建空气质量预测模型。
                     </p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                        <i class="fa fa-tint text-2xl"></i>
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+                        <i class="fa fa-tint text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-neutral-800 mb-3">水环境监测与模拟</h3>
+                    <h3 class="text-lg font-bold text-neutral-800 mb-2">水环境模拟</h3>
                     <p class="text-neutral-600">
-                        研究流域水环境演化规律，开发水质模型与生态风险评估方法，支撑水资源保护与管理。
+                        研究流域水环境演化规律，开发水质模型与生态风险评估方法。
                     </p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                        <i class="fa fa-tree text-2xl"></i>
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+                        <i class="fa fa-tree text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-neutral-800 mb-3">生态环境遥感监测</h3>
+                    <h3 class="text-lg font-bold text-neutral-800 mb-2">生态环境遥感</h3>
                     <p class="text-neutral-600">
-                        利用卫星遥感与无人机技术，开展区域生态环境监测与评估，为生态保护与修复提供技术支持。
+                        利用卫星与无人机技术，开展区域生态环境监测与评估。
                     </p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                        <i class="fa fa-microchip text-2xl"></i>
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+                        <i class="fa fa-microchip text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-neutral-800 mb-3">环境传感器网络</h3>
+                    <h3 class="text-lg font-bold text-neutral-800 mb-2">环境传感器网络</h3>
                     <p class="text-neutral-600">
-                        研究新型环境传感器技术、传感器网络优化部署与数据采集方法，实现对环境要素的实时监测。
+                        研究新型环境传感器技术与优化部署方法，实现实时环境监测。
                     </p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                        <i class="fa fa-database text-2xl"></i>
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+                        <i class="fa fa-database text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-neutral-800 mb-3">环境大数据分析</h3>
+                    <h3 class="text-lg font-bold text-neutral-800 mb-2">环境大数据分析</h3>
                     <p class="text-neutral-600">
-                        发展环境大数据处理、分析与挖掘技术，结合机器学习方法，揭示环境演变规律与驱动机制。
+                        发展环境大数据处理技术，结合机器学习揭示环境演变规律。
                     </p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-md p-6 card-hover">
-                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
-                        <i class="fa fa-line-chart text-2xl"></i>
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+                        <i class="fa fa-line-chart text-xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-neutral-800 mb-3">环境决策支持系统</h3>
+                    <h3 class="text-lg font-bold text-neutral-800 mb-2">环境决策支持</h3>
                     <p class="text-neutral-600">
-                        集成环境模型、优化算法与决策理论，开发环境管理与决策支持系统，为环境政策制定提供科学依据。
+                        开发环境管理与决策支持系统，为环境政策制定提供科学依据。
                     </p>
                 </div>
             </div>
@@ -217,190 +177,109 @@
     </section>
 
     <!-- 研究团队 -->
-    <section id="members" class="py-16 bg-white">
+    <section id="members" class="py-12 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-neutral-800 mb-4">研究团队</h2>
-                <div class="w-20 h-1 bg-primary mx-auto"></div>
-            </div>
+            <h2 class="text-2xl font-bold text-neutral-800 mb-8 text-center">研究团队</h2>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
-                    <img src="https://picsum.photos/id/1005/400/300" alt="张教授" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-neutral-800 mb-1">张教授</h3>
-                        <p class="text-primary mb-3">实验室主任</p>
-                        <p class="text-neutral-600 mb-4">
-                            主要研究方向为大气环境监测与建模，主持国家重点研发计划项目2项，发表论文50余篇。
-                        </p>
-                        <div class="flex space-x-3">
-                            <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
-                                <i class="fa fa-google"></i>
-                            </a>
-                            <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
-                                <i class="fa fa-researchgate"></i>
-                            </a>
-                            <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <h3 class="text-lg font-bold text-neutral-800 mb-1">张教授</h3>
+                    <p class="text-primary mb-3">实验室主任</p>
+                    <p class="text-neutral-600 mb-3">
+                        大气环境监测与建模专家，主持国家重点研发计划2项。
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
+                            <i class="fa fa-google"></i>
+                        </a>
+                        <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
+                            <i class="fa fa-researchgate"></i>
+                        </a>
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
-                    <img src="https://picsum.photos/id/1001/400/300" alt="李副教授" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-neutral-800 mb-1">李副教授</h3>
-                        <p class="text-primary mb-3">水环境研究组组长</p>
-                        <p class="text-neutral-600 mb-4">
-                            主要研究方向为水环境监测与模拟，主持国家自然科学基金项目3项，发表论文30余篇。
-                        </p>
-                        <div class="flex space-x-3">
-                            <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
-                                <i class="fa fa-google"></i>
-                            </a>
-                            <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
-                                <i class="fa fa-researchgate"></i>
-                            </a>
-                        </div>
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <h3 class="text-lg font-bold text-neutral-800 mb-1">李副教授</h3>
+                    <p class="text-primary mb-3">水环境研究组组长</p>
+                    <p class="text-neutral-600 mb-3">
+                        主要研究水环境模拟与生态风险评估，主持国家自然科学基金3项。
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
+                            <i class="fa fa-google"></i>
+                        </a>
+                        <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
+                            <i class="fa fa-researchgate"></i>
+                        </a>
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
-                    <img src="https://picsum.photos/id/1000/400/300" alt="王讲师" class="w-full h-64 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-neutral-800 mb-1">王讲师</h3>
-                        <p class="text-primary mb-3">环境传感器网络研究组组长</p>
-                        <p class="text-neutral-600 mb-4">
-                            主要研究方向为环境传感器网络，主持国家自然科学基金青年基金1项，发表论文20余篇。
-                        </p>
-                        <div class="flex space-x-3">
-                            <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
-                                <i class="fa fa-google"></i>
-                            </a>
-                            <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </div>
+                <div class="bg-white rounded-lg shadow-sm p-5 card-hover">
+                    <h3 class="text-lg font-bold text-neutral-800 mb-1">王讲师</h3>
+                    <p class="text-primary mb-3">环境传感器网络研究组组长</p>
+                    <p class="text-neutral-600 mb-3">
+                        专注于环境传感器网络技术研究，主持国家自然科学基金青年基金1项。
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
+                            <i class="fa fa-google"></i>
+                        </a>
+                        <a href="#" class="text-neutral-600 hover:text-primary transition-colors">
+                            <i class="fa fa-github"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
-            
-            <div class="text-center mt-10">
-                <a href="#" class="text-primary font-medium hover:underline">查看全部团队成员</a>
             </div>
         </div>
     </section>
 
     <!-- 学术成果 -->
-    <section id="publications" class="py-16 bg-neutral-100">
+    <section id="publications" class="py-12 bg-neutral-100">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-neutral-800 mb-4">学术成果</h2>
-                <div class="w-20 h-1 bg-primary mx-auto"></div>
-            </div>
+            <h2 class="text-2xl font-bold text-neutral-800 mb-8 text-center">学术成果</h2>
             
-            <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
                 <h3 class="text-xl font-bold text-neutral-800 mb-4">代表性论文</h3>
                 
                 <div class="space-y-4">
-                    <div class="p-4 border-l-4 border-primary bg-neutral-50">
-                        <p class="font-medium">Zhang, J., Li, Y., Wang, H., & Chen, X. (2023). A novel air quality prediction model based on hybrid deep learning approach. Environmental Science & Technology, 57(12), 4890-4901.</p>
+                    <div class="p-3 border-l-3 border-primary bg-neutral-50">
+                        <p class="font-medium">Zhang, J., et al. (2023). A novel air quality prediction model. Environmental Science & Technology.</p>
                     </div>
                     
-                    <div class="p-4 border-l-4 border-primary bg-neutral-50">
-                        <p class="font-medium">Li, Y., Zhang, J., & Zhao, L. (2023). Optimized deployment of wireless sensor networks for urban air quality monitoring. Sensors and Actuators B: Chemical, 371, 132534.</p>
+                    <div class="p-3 border-l-3 border-primary bg-neutral-50">
+                        <p class="font-medium">Li, Y., et al. (2023). Optimized deployment of wireless sensor networks. Sensors and Actuators B.</p>
                     </div>
                     
-                    <div class="p-4 border-l-4 border-primary bg-neutral-50">
-                        <p class="font-medium">Wang, H., Zhang, J., & Chen, X. (2022). Integrated water quality assessment and prediction using machine learning techniques: A case study of Taihu Lake. Journal of Environmental Management, 318, 115412.</p>
+                    <div class="p-3 border-l-3 border-primary bg-neutral-50">
+                        <p class="font-medium">Wang, H., et al. (2022). Integrated water quality assessment using machine learning. Journal of Environmental Management.</p>
                     </div>
-                </div>
-                
-                <div class="text-right mt-6">
-                    <a href="#" class="text-primary font-medium hover:underline">查看全部论文</a>
                 </div>
             </div>
             
-            <div class="bg-white rounded-lg shadow-md p-6">
+            <div class="bg-white rounded-lg shadow-sm p-6">
                 <h3 class="text-xl font-bold text-neutral-800 mb-4">科研项目</h3>
                 
                 <div class="space-y-4">
                     <div class="flex items-start">
-                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 flex-shrink-0">
                             <i class="fa fa-flask"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-neutral-800 mb-1">国家重点研发计划项目：城市大气复合污染立体监测技术与设备研发</h4>
+                            <h4 class="font-bold text-neutral-800 mb-1">国家重点研发计划：城市大气复合污染立体监测技术与设备研发</h4>
                             <p class="text-neutral-600">项目负责人：张教授</p>
                             <p class="text-sm text-neutral-500">2022-2026, 经费: 2000万元</p>
                         </div>
                     </div>
                     
                     <div class="flex items-start">
-                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
+                        <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3 flex-shrink-0">
                             <i class="fa fa-flask"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-neutral-800 mb-1">国家自然科学基金面上项目：基于多源数据融合的区域空气质量预测理论与方法研究</h4>
+                            <h4 class="font-bold text-neutral-800 mb-1">国家自然科学基金面上项目：区域空气质量预测理论与方法研究</h4>
                             <p class="text-neutral-600">项目负责人：李副教授</p>
                             <p class="text-sm text-neutral-500">2023-2026, 经费: 65万元</p>
                         </div>
-                    </div>
-                    
-                    <div class="flex items-start">
-                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-4 flex-shrink-0">
-                            <i class="fa fa-flask"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-neutral-800 mb-1">国家自然科学基金青年基金：基于无人机遥感的湖泊富营养化监测与预警研究</h4>
-                            <p class="text-neutral-600">项目负责人：王讲师</p>
-                            <p class="text-sm text-neutral-500">2021-2024, 经费: 28万元</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-right mt-6">
-                    <a href="#" class="text-primary font-medium hover:underline">查看全部项目</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 科研环境 -->
-    <section id="facilities" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-neutral-800 mb-4">科研环境</h2>
-                <div class="w-20 h-1 bg-primary mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold text-neutral-800 mb-4">室内试验环境</h3>
-                    <p class="text-neutral-600 mb-6">
-                        实验室拥有环境模拟舱、空气质量监测设备、水质分析仪器、传感器研发平台等先进设备，可开展环境感知技术研发、环境过程模拟与分析等研究。
-                    </p>
-                    
-                    <div class="grid grid-cols-2 gap-4">
-                        <img src="https://picsum.photos/id/1069/400/300" alt="环境模拟舱" class="rounded-lg shadow-md">
-                        <img src="https://picsum.photos/id/180/400/300" alt="空气质量监测设备" class="rounded-lg shadow-md">
-                        <img src="https://picsum.photos/id/237/400/300" alt="水质分析仪器" class="rounded-lg shadow-md">
-                        <img src="https://picsum.photos/id/1060/400/300" alt="传感器研发平台" class="rounded-lg shadow-md">
-                    </div>
-                </div>
-                
-                <div>
-                    <h3 class="text-xl font-bold text-neutral-800 mb-4">野外试验环境</h3>
-                    <p class="text-neutral-600 mb-6">
-                        实验室在城市、郊区和农村地区建立了多个野外监测站点，配备了先进的监测设备，可开展长期环境观测与研究。
-                    </p>
-                    
-                    <div class="grid grid-cols-2 gap-4">
-                        <img src="https://picsum.photos/id/1058/400/300" alt="城市监测站点" class="rounded-lg shadow-md">
-                        <img src="https://picsum.photos/id/1062/400/300" alt="农村监测站点" class="rounded-lg shadow-md">
-                        <img src="https://picsum.photos/id/1063/400/300" alt="无人机监测系统" class="rounded-lg shadow-md">
-                        <img src="https://picsum.photos/id/1067/400/300" alt="湖泊监测浮标" class="rounded-lg shadow-md">
                     </div>
                 </div>
             </div>
@@ -408,18 +287,13 @@
     </section>
 
     <!-- 联系我们 -->
-    <section id="contact" class="py-16 bg-neutral-100">
+    <section id="contact" class="py-12 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-neutral-800 mb-4">联系我们</h2>
-                <div class="w-20 h-1 bg-primary mx-auto"></div>
-            </div>
+            <h2 class="text-2xl font-bold text-neutral-800 mb-8 text-center">联系我们</h2>
             
-            <div class="bg-white rounded-lg shadow-md p-8 max-w-3xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6">
                     <div>
-                        <h3 class="text-xl font-bold text-neutral-800 mb-4">联系方式</h3>
-                        
                         <div class="space-y-4">
                             <div class="flex items-start">
                                 <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-4">
@@ -464,16 +338,11 @@
                                 <a href="#" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
-                                    <i class="fa fa-youtube"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
                     
                     <div>
-                        <h3 class="text-xl font-bold text-neutral-800 mb-4">发送消息</h3>
-                        
                         <form>
                             <div class="mb-4">
                                 <label for="name" class="block text-sm font-medium text-neutral-700 mb-1">姓名</label>
@@ -506,30 +375,15 @@
     </section>
 
     <!-- 页脚 -->
-    <footer class="bg-neutral-800 text-white py-10">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="flex items-center justify-center md:justify-start">
-                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary mr-3">
-                            <i class="fa fa-flask"></i>
-                        </div>
-                        <span class="text-xl font-bold">环境感知与建模研究组</span>
-                    </div>
-                    <p class="text-neutral-400 mt-2 text-center md:text-left">
-                        致力于环境科学与技术领域的前沿研究
-                    </p>
+    <footer class="bg-neutral-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary mr-3">
+                    <i class="fa fa-flask"></i>
                 </div>
-                
-                <div class="text-center md:text-right">
-                    <p class="text-neutral-400">© 2023 环境感知与建模研究组. 保留所有权利.</p>
-                    <p class="text-neutral-400 mt-1">
-                        <a href="#" class="hover:text-white transition-colors">隐私政策</a> · 
-                        <a href="#" class="hover:text-white transition-colors">使用条款</a> · 
-                        <a href="#" class="hover:text-white transition-colors">网站地图</a>
-                    </p>
-                </div>
+                <span class="text-xl font-bold">环境感知与建模研究组</span>
             </div>
+            <p class="text-neutral-400">© 2023 环境感知与建模研究组. 保留所有权利.</p>
         </div>
     </footer>
 
@@ -563,24 +417,6 @@
                     });
                 }
             });
-        });
-        
-        // 导航栏滚动效果
-        const header = document.querySelector('header');
-        let lastScrollY = window.scrollY;
-        
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('py-2');
-                header.classList.remove('py-4');
-                header.classList.add('shadow-lg');
-            } else {
-                header.classList.remove('py-2');
-                header.classList.add('py-4');
-                header.classList.remove('shadow-lg');
-            }
-            
-            lastScrollY = window.scrollY;
         });
     </script>
 </body>
